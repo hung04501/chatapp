@@ -1,20 +1,28 @@
 {
-  "name": "Uploadbase64",
-  "version": "0.0.1",
+  "name": "chatapp",
+  "version": "1.0.0",
   "private": "true",
   "dependencies": {
-    "async": "^1.5.2",
-    "body-parser": "^1.15.0",
-    "cookie-parser": "^1.4.1",
     "express": "*",
-    "google-auth-library": "^0.9.7",
-    "googleapis": "^4.0.0",
-    "method-override": "^2.3.5",
-    "mongoose": "^4.4.11",
-    "multer": "*",
-    "refresh-token": "^0.1.0",
-    "request": "^2.70.0",
     "socket.io": "*"
   },
-  "author": "developer"
+  "author": "developer",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "description": "chap app",
+  "main": "server.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hung04501/chatapp.git"
+  },
+  "keywords": [
+    "chat"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hung04501/chatapp/issues"
+  },
+  "homepage": "https://github.com/hung04501/chatapp#readme"
 }

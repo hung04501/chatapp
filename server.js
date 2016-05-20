@@ -1,5 +1,4 @@
 var express = require('express');
-var mongodb = require('mongodb');
 
 var app = express()
 var fs = require('fs');
