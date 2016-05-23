@@ -16,7 +16,7 @@
 		height :50px;
 	  }
     </style>
-	<script src="http://localhost:5000/socket.io/socket.io.js"></script>
+	<script src="http://localhost:3000/socket.io/socket.io.js"></script>
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 	
   </head>
@@ -59,7 +59,7 @@
 		function escaped(s) {
           return $("<div></div>").html(s).html();
         }
-		 var socket = io.connect('http://localhost:5000');
+		 var socket = io.connect('http://localhost:3000');
 		//new message
 		socket.on('updatechat', function (username, data) {
 				$('#messages').append('<b>'+ escaped(username) + ':</b> ' + escaped(data) + "<br/>");

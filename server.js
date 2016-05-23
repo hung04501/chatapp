@@ -6,8 +6,8 @@ var app = express(),
     server = require('http').createServer(app),
     io = require('socket.io').listen(server);
 	
-var port = 5000;
-app.set('port', port);
+var PORT = 5000;
+app.set('port', PORT);
 
 
 app.get('/', function(resuest, response) {
@@ -28,6 +28,6 @@ io.sockets.on('connection', function(socket) {
 		
 });
 //port
-server.listen(port, function () {
+server.listen(process.env.PORT || 3000, function () {
   console.log('Listening on port ' + server.address().port)
 });
