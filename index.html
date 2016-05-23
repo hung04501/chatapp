@@ -16,7 +16,7 @@
 		height :50px;
 	  }
     </style>
-	<script src="https://chatapp-hungnq.herokuapp.com:3000/socket.io/socket.io.js"></script>
+	<script src="https://chatapp-hungnq.herokuapp.com/socket.io/socket.io.js"></script>
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 	
   </head>
@@ -59,7 +59,7 @@
 		function escaped(s) {
           return $("<div></div>").html(s).html();
         }
-		 var socket = io.connect('https://chatapp-hungnq.herokuapp.com:3000');
+		 var socket = io.connect('https://chatapp-hungnq.herokuapp.com');
 		//new message
 		socket.on('updatechat', function (username, data) {
 				$('#messages').append('<b>'+ escaped(username) + ':</b> ' + escaped(data) + "<br/>");
