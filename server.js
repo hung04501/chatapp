@@ -10,7 +10,7 @@ var PORT = 5000;
 app.set('port', PORT);
 
 
-app.post('/', function(resuest, response) {
+app.get('/', function(resuest, response) {
   response.sendFile(__dirname+'/index.html');
 });
 
